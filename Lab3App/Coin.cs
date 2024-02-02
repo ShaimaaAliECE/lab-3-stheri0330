@@ -10,7 +10,11 @@ namespace Lab3App
     {
         public int Value {  get; set; }
 
-        public Coin(string description, int score, int value) : base(description, score) { }
+        public Coin(string description, int score, int value) : base(description, score) 
+        {
+            this.Value = value;
+            this.Score = score;
+        }
 
         public override void UpdateTotalValue() 
         {
@@ -21,11 +25,7 @@ namespace Lab3App
         {
             Console.WriteLine($"Coin {Description} is displayed");
         }
-        public override void AddMe(List<Collectable> list) 
-        { 
-            list.Add(this);
-            Console.WriteLine($"{Description} Collected, Congrats!!!!");
-        }
+        
     }
 }
   

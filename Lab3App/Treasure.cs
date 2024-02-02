@@ -13,7 +13,7 @@ namespace Lab3App
             this.Description = description;
             this.Score = score;
         }
-        public int Score { get; set; }
+        public int Score;
 
         public void UpdateTotalScore() 
         {

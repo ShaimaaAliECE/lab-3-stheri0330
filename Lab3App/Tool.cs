@@ -8,9 +8,9 @@ namespace Lab3App
 {
     internal abstract class Tool : Collectable
     {
-        protected Tool(string description) 
+        public Tool(string description) 
         { 
-            Description = description;
+            this.Description = description;
         }
         public abstract void DoAction();
 

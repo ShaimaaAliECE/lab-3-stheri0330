@@ -10,7 +10,11 @@ namespace Lab3App
     internal class Diamond : Treasure
     {
         public int Value { get; set; }
-        public Diamond(string description, int score) : base(description,score) {}
+        public Diamond(string description, int score) : base(description,score) 
+        {
+            this.Description = description;
+            this.Score = score;
+        }
         public override void Display() 
         {
             Console.WriteLine("Diamond"+Description+" was displayed");

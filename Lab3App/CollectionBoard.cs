@@ -14,12 +14,12 @@ namespace Lab3App
         public void UpdateTotalScore(int score) 
         {
             TotalScore+=score;
-            Console.WriteLine($"Total score was updated to: {TotalScore}");
+            Console.WriteLine($"Total Score was updated to: {TotalScore}");
         }
         public void UpdateTotalValue(int value) 
         {
             TotalValue += value;
-            Console.WriteLine($"THe value was updated to: {TotalValue}");
+            Console.WriteLine($"Total Value was updated to: {TotalValue}");
         }
     }
 }
